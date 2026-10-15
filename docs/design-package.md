@@ -21,5 +21,18 @@ Libre Baskerville (display, brand). Instrument Sans (corpo) e JetBrains Mono (et
 3. Cambridge: uscita dalle nuvole in discesa verso King's College Chapel, fermo composto, headline a sinistra.
 Ogni prompt: "no text, no logos, no lettering anywhere". Segmenti da 6 s, 1080p, image-to-video, video gate per ciascuno.
 
+## Fatti di riferimento
+Vedi `content/source-facts.md`. Il copy usa solo quei fatti.
+
+## Preflight costi (Magnific, saldo 10.734 crediti)
+| Modello video | Durata | Risoluzione | Crediti/segmento | 3 segmenti |
+|---|---|---|---|---|
+| Seedance 2.5 | 6 s | 1080p | 4.740 | 14.220 (supera il saldo) |
+| Seedance 2.0 | 6 s | 1080p | 4.200 | 12.600 (supera il saldo) |
+| Kling 2.5 | 5 s | 1080p | 325 | 975 |
+Raccomandato: **Kling 2.5**, 5 s per segmento (il modello offre 5 o 10 s), start e end frame supportati. Totale hero ~15 s.
+Immagini: fotogramma iniziale e 4 still di supporto con Seedream 5 Pro, ~100 crediti ciascuno (stima, costo variabile).
+Totale stimato: ~1.500-2.500 crediti con margine per 2-3 re-roll.
+
 ## Stato
-Copy definitivo, struttura sotto la hero e dati: bloccati finché cambridgecentre.com non è raggiungibile (rete dell'ambiente: 403).
+Fatti estratti. Prossimo gate: approvazione dello storyboard e della cifra, poi generazione del fotogramma iniziale.
