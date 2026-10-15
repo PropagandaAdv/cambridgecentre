@@ -36,3 +36,25 @@ Totale stimato: ~1.500-2.500 crediti con margine per 2-3 re-roll.
 
 ## Stato
 Fatti estratti. Prossimo gate: approvazione dello storyboard e della cifra, poi generazione del fotogramma iniziale.
+
+## Stato finale (2026-10-15)
+Homepage completa in `src/CambridgeHomepage.jsx`. Deploy su Vercel NON eseguito: la creazione del progetto è stata rifiutata con 403 (permessi sul team "Propaganda Adv").
+
+### Crediti Magnific spesi: 2.100 (restano circa 8.630)
+- Immagini: 800 (fotogramma di Londra, Westminster, Cambridge, 4 tile e 1 rigenerazione)
+- Video Kling 2.5: 1.300 (4 segmenti da 5 s, di cui il primo capitolo 2 scartato)
+
+### Audit di leggibilità (scrim 0,70, bianco sul fotogramma peggiore, modello)
+Pixel peggiore sotto il testo: capitolo 1 ≥ 4,6:1, capitolo 2 ≥ 3,7:1, fermo finale ≥ 4,1:1. Contrasti dei token calcolati: rosso su bianco 4,85, blu su canvas 5,34, bianco su blu notte 16,9, rosso su blu notte 3,49 (solo grafica e testo grande).
+
+### Da verificare con il cliente
+1. "Unico centro esami autorizzato Cambridge Assessment English" e dicitura esatta dello status.
+2. "Dal 1964" e "oltre 60 anni" (parole del sito, usate su conferma).
+3. Exam Practice: nella home è "Coming soon", non è in pagina.
+4. Nomi di scuole e aziende clienti e autorizzazione all'uso (SHOW_CLIENT_NAMES = false).
+5. PCTO e formazione docenti: non sul sito, non in pagina.
+6. Destinazione del modulo: ora mailto; tempi di risposta e passi dopo l'invio.
+7. Selettore IT/EN: il sito non ha versione inglese, EN è disabilitato.
+8. Cookie policy: il sito attuale non ha la pagina, nessun link.
+9. Nota di non affiliazione con l'Università di Cambridge nel footer: formula da approvare.
+10. Le immagini dei tile sono evocative e generate: l'aula degli esami non mostra il laboratorio informatico reale.
