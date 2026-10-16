@@ -156,7 +156,7 @@ const VIDEO_SOURCES = [
 ];
 const VIDEO_END = 0.88; // progresso di scroll in cui il video raggiunge Cambridge
 // Bande [inizio rampa, piena, inizio uscita, fine uscita] in progresso di scroll 0-1
-const BAND_LONDON = [0.02, 0.06, 0.22, 0.27];
+const BAND_LONDON = [-0.1, 0, 0.22, 0.27]; // già pieno a scroll 0: il titolo c'è prima di scorrere
 const BAND_WESTMINSTER = [0.31, 0.35, 0.5, 0.55];
 const BAND_SETTLE = [0.76, 0.84, 2, 3];
 
@@ -604,12 +604,12 @@ function ScrubHero({ onFail }) {
         <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(11,30,48,0.5)_100%)]" />
         <div aria-hidden="true" className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-night/60 to-transparent" />
         {/* Livello 2: scrim per banda, visibile solo mentre il suo testo è visibile */}
-        <div ref={sc1} aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(to_right,rgba(11,30,48,0.7)_0%,rgba(11,30,48,0.7)_42%,transparent_80%)] opacity-0" />
+        <div ref={sc1} aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(to_right,rgba(11,30,48,0.7)_0%,rgba(11,30,48,0.7)_42%,transparent_80%)]" style={{ opacity: 0.95 }} />
         <div ref={sc2} aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(to_left,rgba(11,30,48,0.7)_0%,rgba(11,30,48,0.7)_42%,transparent_80%)] opacity-0" />
         <div ref={sc3} aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(to_right,rgba(11,30,48,0.7)_0%,rgba(11,30,48,0.7)_42%,transparent_80%)] opacity-0" />
 
         {/* Capitolo 1 */}
-        <div ref={b1} className="absolute inset-y-0 left-0 flex w-full items-center px-5 opacity-0 sm:px-10 md:w-1/2 lg:px-16" style={{ visibility: 'hidden' }}>
+        <div ref={b1} className="absolute inset-y-0 left-0 flex w-full items-center px-5 sm:px-10 md:w-1/2 lg:px-16" style={{ opacity: 1, visibility: 'visible' }}>
           <div className="max-w-xl">
             <KickerPill>{HERO.chapters[0].kicker}</KickerPill>
             <Headline as="p">{HERO.chapters[0].title}</Headline>
